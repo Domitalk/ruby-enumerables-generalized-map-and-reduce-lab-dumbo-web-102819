@@ -9,6 +9,7 @@ def map(array)
 end
 
 def reduce(source_array, starting_point = 0)
+  
   if source_array.all?(Numeric) == true
     temp_value = starting_point
   else
