@@ -23,7 +23,7 @@ def reduce(source_array, starting_point = 0)
   end
 
   while i < source_array.length do
-    memo = yield(memo, source_array[i])
+    memo = yield(source_array[i], memo)
     i += 1
   end
   
