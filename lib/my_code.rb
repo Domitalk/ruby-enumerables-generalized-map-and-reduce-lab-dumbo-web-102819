@@ -14,6 +14,7 @@ def reduce(source_array, starting_point = 0)
   else
     temp_value = true
   end
+  
   i = 0
   while i < source_array.length do
     temp_value = yield(temp_value, source_array[i])
