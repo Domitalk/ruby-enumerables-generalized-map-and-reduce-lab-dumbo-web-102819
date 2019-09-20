@@ -12,10 +12,6 @@ def reduce(source_array, starting_point = 0)
   i = 0
   temp_value = 0
 
-  if starting_point.is_a?(Numeric) == true
-    temp_value += starting_point
-  end
-
   if source_array.all?(Numeric) == true
     temp_value = temp_value
   else
