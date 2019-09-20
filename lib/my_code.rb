@@ -18,8 +18,16 @@ def reduce(source_array, starting_point = 0)
 
   if source_array.is_a?(Numeric) == true
     memo = temp_total
+    while i < source_array.length do
+      memo = yield(memo, source_array[i])
+      i += 1
+    end
   else
     memo = true
+    while i < source_array.length do
+      memo = yield(memo, source_array[i])
+      i += 1
+    end
   end
 
   while i < source_array.length do
