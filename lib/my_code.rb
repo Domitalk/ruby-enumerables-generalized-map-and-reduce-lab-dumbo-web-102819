@@ -9,7 +9,7 @@ def map(array)
 end
 
 def reduce(array, starting_point = 0)
-  if array.instance_of? Fixnum
+  if array.respond_to?(:to_i))
     memo = starting_point
   else
     memo = true
