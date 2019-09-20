@@ -10,8 +10,9 @@ end
 
 def reduce(source_array, starting_point = 0)
   i = 0
+  temp_total = 0 + stating_point
   if source_array.all? {|i| i.is_a?(Integer) }
-    memo = starting_point
+    memo = temp_total
   else
     memo = true
   end
