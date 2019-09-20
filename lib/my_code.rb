@@ -9,7 +9,7 @@ def map(array)
 end
 
 def reduce(source_array, starting_point = 0)
-  if source_array.respond_to?(:to_i)
+  if source_array.all? {|i| i.is_a?(Integer) }
     memo = starting_point
   else
     memo = true
