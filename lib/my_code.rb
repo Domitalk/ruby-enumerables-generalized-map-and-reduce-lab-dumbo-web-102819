@@ -7,3 +7,12 @@ def map(array)
   end
   return new_map
 end
+
+def reduce(array, starting_point = "0")
+  temp_value = ''
+  if array.instance_of? Fixnum do
+    temp_value = starting_point + 0
+  else 
+    temp_value = true
+  end
+  
