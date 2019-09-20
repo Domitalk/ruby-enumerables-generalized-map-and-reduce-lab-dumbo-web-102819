@@ -9,10 +9,15 @@ def map(array)
 end
 
 def reduce(source_array, starting_point = 0)
+  i = 0
   if source_array.all? {|i| i.is_a?(Integer) }
     memo = starting_point
   else
     memo = true
   end
-  yield
+  while i < source_array.length do
+    memo = yield(array[i])
+    i += 1
+  end
+  return memo
 end
