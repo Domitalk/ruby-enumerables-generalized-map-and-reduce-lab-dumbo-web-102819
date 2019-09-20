@@ -10,14 +10,20 @@ end
 
 def reduce(source_array, starting_point = 0)
   i = 0
-  temp_total = 0 + starting_point
+  temp_total = 0 
+  
+  if starting_point.is_a?(Numeric) == true
+    temp_total += starting_point
+  end
+  
   if source_array.is_a?(Numeric) == true
     memo = temp_total
   else
     memo = true
   end
+  
   while i < source_array.length do
-    memo = yield(source_array[i])
+    memo = yield(memo, source_array[i])
     i += 1
   end
   return memo
