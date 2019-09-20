@@ -8,14 +8,14 @@ def map(array)
   return new_map
 end
 
-def reduce(array, starting_point = 0)
-  if array.respond_to?(:to_i)
+def reduce(source_array, starting_point = 0)
+  if source_array.respond_to?(:to_i)
     memo = starting_point
   else
     memo = true
   end
-  array.length.times { |index|
-    n = array[index]
+  source_array.length.times { |index|
+    n = source_array[index]
     memo = yield
   }
   return memo
