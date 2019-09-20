@@ -9,10 +9,14 @@ def map(array)
 end
 
 def reduce(array, starting_point = "0")
-  temp_value = ''
+  memo = ''
   if array.instance_of? Fixnum do
-    temp_value = starting_point + 0
+    memo = starting_point + 0
   else
-    temp_value = true
+    memo = true
   end
-  
+  array.length.times { |n|
+    memo = yield
+  }
+  return memo
+end
