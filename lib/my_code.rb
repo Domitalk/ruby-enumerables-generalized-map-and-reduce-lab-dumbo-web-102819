@@ -10,7 +10,7 @@ end
 
 def reduce(source_array, starting_point = 0)
   i = 0
-  temp_value = 0 
+  temp_value = 0
 
   if source_array.all?(Numeric) == true
     temp_value = temp_value + starting_point
