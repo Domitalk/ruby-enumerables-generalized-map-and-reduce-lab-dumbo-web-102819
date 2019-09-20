@@ -8,7 +8,7 @@ def map(array)
   return new_map
 end
 
-def reduce(array, starting_point = "0")
+def reduce(array, starting_point = 0)
   memo = ''
   if array.instance_of? Fixnum
     memo = starting_point
