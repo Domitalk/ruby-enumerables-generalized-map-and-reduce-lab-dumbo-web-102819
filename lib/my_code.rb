@@ -11,7 +11,7 @@ end
 def reduce(array, starting_point = "0")
   memo = ''
   if array.instance_of? Fixnum
-    memo = starting_point + 0
+    memo = (starting_point + 0)
   else
     memo = true
   end
