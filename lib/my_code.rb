@@ -21,6 +21,5 @@ def reduce(source_array, starting_point = 0)
     temp_value = yield(temp_value, source_array[i])
     i += 1
   end
-
   temp_value
 end
