@@ -12,7 +12,7 @@ def reduce(array, starting_point = "0")
   temp_value = ''
   if array.instance_of? Fixnum do
     temp_value = starting_point + 0
-  else 
+  else
     temp_value = true
   end
   
