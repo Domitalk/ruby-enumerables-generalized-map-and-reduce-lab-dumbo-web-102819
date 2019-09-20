@@ -15,7 +15,7 @@ def reduce(source_array, starting_point = 0)
   if starting_point.is_a?(Numeric) == true
     temp_value += starting_point
   end
-  
+
   if source_array.is_a?(Numeric) == true
     temp_value = temp_value
   else
@@ -26,6 +26,6 @@ def reduce(source_array, starting_point = 0)
     memo = yield(temp_value, source_array[i])
     i += 1
   end
-  
+
   return temp_value
 end
