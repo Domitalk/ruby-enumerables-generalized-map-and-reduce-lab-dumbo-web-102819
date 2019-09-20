@@ -11,7 +11,7 @@ end
 def reduce(source_array, starting_point = 0)
   i = 0
   temp_total = 0 + starting_point
-  if source_array.is_a?(Numeric)
+  if source_array.is_a?(Numeric) == true
     memo = temp_total
   else
     memo = true
