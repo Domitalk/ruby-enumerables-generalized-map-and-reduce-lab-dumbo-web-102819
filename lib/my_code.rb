@@ -14,5 +14,5 @@ def reduce(source_array, starting_point = 0)
   else
     memo = true
   end
-  
+  yield
 end
