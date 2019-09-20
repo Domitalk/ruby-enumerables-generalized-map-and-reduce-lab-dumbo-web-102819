@@ -14,7 +14,8 @@ def reduce(array, starting_point = 0)
   else
     memo = true
   end
-  array.length.times { |n|
+  array.length.times { |index|
+    n = array[index]
     memo = yield
   }
   return memo
