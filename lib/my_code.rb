@@ -5,7 +5,7 @@ def map(array)
     new_map[i] = yield(array[i])
     i += 1
   end
-  return new_map
+  new_map
 end
 
 def reduce(source_array, starting_point = 0)
